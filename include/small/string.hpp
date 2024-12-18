@@ -4226,7 +4226,7 @@ namespace small {
         /// \brief Size it takes to store the null '\0' char
         /// Of course we could just write 1 in the code, but this gives us
         /// better semantics
-        static constexpr size_type null_char_size = '\0';
+        static constexpr size_type null_char_size = sizeof('\0');
 
         /// \brief True if this string type supports utf8
         /// We use utf8 for the string whenever the char size is 1.
